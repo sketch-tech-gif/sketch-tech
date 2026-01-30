@@ -1,0 +1,52 @@
+.navbar {
+  /* New header color combination: deep slate -> teal gradient */
+  background: linear-gradient(90deg, #0f1724 0%, #0b7285 100%);
+  color: white;
+  padding: 0.35rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+  height: 64px;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center; /* center the title */
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo {
+  display:flex;
+  align-items:center;
+  gap:0.6rem;
+  justify-content:center;
+  text-align:center;
+  width: 100%;
+}
+.navbar-logo h1 { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; font-size:1.25rem; margin:0; font-weight:800; color:white; line-height:1 }
+.navbar-logo p { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; font-size:0.8rem; margin:0; opacity:0.95; color:white }
+.logo-icon { font-size:1.6rem }
+
+.navbar-menu { display:flex; gap:0.6rem; list-style:none; margin:0; padding:0; position:absolute; right:1rem; top:50%; transform:translateY(-50%) }
+.navbar-menu button { background:transparent; color:white; border:1px solid rgba(255,255,255,0.12); padding:0.25rem 0.6rem; border-radius:6px; cursor:pointer; font-family: inherit }
+.navbar-menu button:hover { background: rgba(255,255,255,0.06) }
+
+.navbar-menu li:not(:last-child) a { font-size:0.8rem }
+
+@media (max-width: 768px) {
+  .navbar-container { padding: 0 0.75rem }
+  .navbar-logo h1 { font-size:0.95rem }
+  .navbar-logo p { font-size:0.6rem }
+  .logo-icon { font-size:1.4rem }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo h1 { font-size:0.85rem }
+  .navbar-logo p { font-size:0.55rem }
+  .logo-icon { font-size:1.2rem }
+}

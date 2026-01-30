@@ -1,0 +1,303 @@
+/* About Page Styles */
+
+.about-page {
+  width: 100%;
+}
+
+/* About Header */
+.about-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* About Story */
+.about-story {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.story-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.story-content h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.story-content p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Mission Section */
+.about-mission {
+  background: #f8f9fa;
+  padding: 4rem 2rem;
+}
+
+.about-mission h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.mission-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.mission-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #667eea;
+}
+
+.mission-item h3 {
+  font-size: 1.5rem;
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.mission-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Team Section */
+.about-team {
+  padding: 4rem 2rem;
+}
+
+.about-team h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.team-intro {
+  text-align: center;
+  color: #666;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.team-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-avatar {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.team-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.team-role {
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.team-bio {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Services/Differences Section */
+.about-services {
+  background: #f8f9fa;
+  padding: 4rem 2rem;
+}
+
+.about-services h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.differences-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.difference {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.difference:hover {
+  transform: translateY(-5px);
+}
+
+.diff-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.difference h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.difference p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* CTA Section */
+.about-cta {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-btn {
+  background: white;
+  color: #667eea;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-header p {
+    font-size: 1rem;
+  }
+
+  .about-story,
+  .about-mission,
+  .about-team,
+  .about-services,
+  .about-cta {
+    padding: 2rem 1rem;
+  }
+
+  .story-content h2,
+  .about-mission h2,
+  .about-team h2,
+  .about-services h2,
+  .about-cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .story-content p {
+    font-size: 0.95rem;
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-item {
+    padding: 1.5rem 1rem;
+  }
+
+  .team-intro {
+    font-size: 1rem;
+  }
+
+  .team-grid,
+  .differences-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-avatar {
+    font-size: 3rem;
+  }
+
+  .team-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .team-bio {
+    font-size: 0.9rem;
+  }
+
+  .diff-icon {
+    font-size: 2rem;
+  }
+
+  .cta-btn {
+    padding: 0.85rem 1.5rem;
+  }
+}
