@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build --prefix client"
+  publish = "client/dist"
+
+# Redirect all routes to index for SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
