@@ -38,6 +38,11 @@
 
 .navbar-menu li:not(:last-child) a { font-size:0.8rem }
 
+@media (max-width: 768px) {
+  .navbar-menu:not(.mobile) { display: none !important; }
+  .hamburger { display: flex !important; }
+}
+
 /* Hamburger (hidden on large screens) */
 .hamburger {
   display: none;
@@ -86,15 +91,15 @@
 .navbar-menu.mobile button { width: 100%; text-align: left; background: transparent; border: none; padding: 0.5rem 0.6rem; color: white }
 
 
+@media (max-width: 480px) {
+  .navbar-logo h1 { font-size:0.85rem }
+  .navbar-logo p { font-size:0.55rem }
+  .logo-icon { font-size:1.2rem }
+}
+
 @media (max-width: 768px) {
   .navbar-container { padding: 0 0.75rem }
   .navbar-logo h1 { font-size:0.95rem }
   .navbar-logo p { font-size:0.6rem }
   .logo-icon { font-size:1.4rem }
-}
-
-@media (max-width: 480px) {
-  .navbar-logo h1 { font-size:0.85rem }
-  .navbar-logo p { font-size:0.55rem }
-  .logo-icon { font-size:1.2rem }
 }

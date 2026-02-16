@@ -249,3 +249,86 @@
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 480px) {
+  .portfolio-header {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .portfolio-header h1 {
+    font-size: 1.4rem;
+  }
+  
+  .portfolio-header p {
+    font-size: 0.9rem;
+  }
+  
+  .portfolio-content {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .filters {
+    gap: 0.4rem;
+    padding: 0 0.3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .filter-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.7rem;
+  }
+  
+  .project-image {
+    font-size: 2rem;
+    height: 100px;
+  }
+  
+  .project-content {
+    padding: 0.9rem;
+  }
+  
+  .project-content h3 {
+    font-size: 0.95rem;
+  }
+  
+  .project-description {
+    font-size: 0.75rem;
+  }
+  
+  .project-meta {
+    font-size: 0.7rem;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem 0;
+  }
+  
+  .view-btn {
+    padding: 0.55rem;
+    font-size: 0.8rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .stat {
+    padding: 1.25rem;
+  }
+  
+  .stat h3 {
+    font-size: 1.8rem;
+  }
+  
+  .stat p {
+    font-size: 0.8rem;
+  }
+  
+  .portfolio-stats {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .portfolio-stats h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+}

@@ -324,3 +324,89 @@
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 480px) {
+  .contact-header {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .contact-header h1 {
+    font-size: 1.4rem;
+  }
+  
+  .contact-header p {
+    font-size: 0.9rem;
+  }
+  
+  .contact-content {
+    padding: 1.5rem 0.75rem;
+    gap: 1.5rem;
+  }
+  
+  .contact-info h2 {
+    font-size: 1.3rem;
+  }
+  
+  .info-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .info-icon {
+    font-size: 1.5rem;
+  }
+  
+  .info-details h3 {
+    font-size: 0.95rem;
+  }
+  
+  .info-details p {
+    font-size: 0.8rem;
+  }
+  
+  .contact-form-container {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.6rem;
+    font-size: 16px;
+  }
+  
+  .form-group textarea {
+    min-height: 100px;
+  }
+  
+  .submit-btn {
+    padding: 0.65rem;
+    font-size: 0.85rem;
+  }
+  
+  .social-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 0.7rem;
+  }
+  
+  .faq-section {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .faq-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .faq-item {
+    padding: 1rem 0.75rem;
+  }
+  
+  .faq-item h3 {
+    font-size: 0.95rem;
+  }
+  
+  .faq-item p {
+    font-size: 0.75rem;
+  }
+}

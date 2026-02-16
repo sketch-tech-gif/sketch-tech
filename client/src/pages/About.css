@@ -301,3 +301,102 @@
     padding: 0.85rem 1.5rem;
   }
 }
+
+@media (max-width: 480px) {
+  .about-header {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .about-header h1 {
+    font-size: 1.4rem;
+  }
+  
+  .about-header p {
+    font-size: 0.9rem;
+  }
+  
+  .about-story,
+  .about-mission,
+  .about-team,
+  .about-services,
+  .about-cta {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .story-content h2,
+  .about-mission h2,
+  .about-team h2,
+  .about-services h2,
+  .about-cta h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .story-content p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+  
+  .mission-item {
+    padding: 1.25rem;
+  }
+  
+  .mission-item h3 {
+    font-size: 1.1rem;
+  }
+  
+  .mission-item p {
+    font-size: 0.8rem;
+  }
+  
+  .team-intro {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .team-card {
+    padding: 1.25rem;
+  }
+  
+  .team-avatar {
+    font-size: 2.5rem;
+  }
+  
+  .team-card h3 {
+    font-size: 1rem;
+  }
+  
+  .team-role {
+    font-size: 0.85rem;
+  }
+  
+  .team-bio {
+    font-size: 0.8rem;
+  }
+  
+  .difference {
+    padding: 1.25rem;
+  }
+  
+  .diff-icon {
+    font-size: 1.8rem;
+  }
+  
+  .difference h3 {
+    font-size: 1rem;
+  }
+  
+  .difference p {
+    font-size: 0.8rem;
+  }
+  
+  .about-cta p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-btn {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.85rem;
+  }
+}

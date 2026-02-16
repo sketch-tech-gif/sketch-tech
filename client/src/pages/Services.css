@@ -205,3 +205,47 @@
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 480px) {
+  .services-header {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .services-header h1 {
+    font-size: 1.4rem;
+  }
+  
+  .services-header p {
+    font-size: 0.9rem;
+  }
+  
+  .services-content,
+  .service-packages {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .services-intro h2 {
+    font-size: 1.3rem;
+  }
+  
+  .services-intro p {
+    font-size: 0.85rem;
+  }
+  
+  .package h3 {
+    font-size: 1.3rem;
+  }
+  
+  .package .price {
+    font-size: 0.95rem;
+  }
+  
+  .package ul {
+    font-size: 0.8rem;
+  }
+  
+  .package-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+}
