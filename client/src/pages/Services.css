@@ -6,15 +6,16 @@
 
 /* Services Header */
 .services-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1a2332 0%, #2d3748 100%);
   color: white;
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
 .services-header h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
+  font-weight: 800;
 }
 
 .services-header p {
@@ -25,7 +26,7 @@
 /* Services Content */
 .services-content {
   padding: 4rem 2rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -35,9 +36,10 @@
 }
 
 .services-intro h2 {
-  font-size: 2rem;
-  color: #333;
+  font-size: 2.2rem;
+  color: #1a2332;
   margin-bottom: 1rem;
+  font-weight: 800;
 }
 
 .services-intro p {
@@ -57,45 +59,46 @@
 
 /* Service Packages */
 .service-packages {
-  background: rgba(255,255,255,0.02);
+  background: #f5f7fa;
   padding: 4rem 2rem;
   margin-top: 3rem;
 }
 
 .service-packages h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
-  color: #333;
+  color: #1a2332;
   margin-bottom: 3rem;
+  font-weight: 800;
 }
 
 .packages-grid {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .package {
-  background: rgba(255,255,255,0.03);
+  background: white;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(1,4,20,0.45);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s, box-shadow 0.3s;
-  border-top: 4px solid rgba(255,255,255,0.06);
+  border-top: 4px solid #3b82f6;
 }
 
 .package.featured {
-  border-top: 4px solid #667eea;
+  border-top: 4px solid #3b82f6;
   transform: scale(1.05);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
 }
 
 .package:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 .package.featured:hover {
@@ -103,14 +106,15 @@
 }
 
 .package h3 {
-  font-size: 1.8rem;
-  color: #333;
+  font-size: 1.5rem;
+  color: #1a2332;
   margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 .package .price {
-  color: #667eea;
-  font-size: 1rem;
+  color: #3b82f6;
+  font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
@@ -118,12 +122,14 @@
 .package ul {
   list-style: none;
   margin-bottom: 2rem;
+  text-align: left;
 }
 
 .package li {
   color: #666;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
   border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
 }
 
 .package li:last-child {
@@ -131,18 +137,21 @@
 }
 
 .package-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #3b82f6;
   color: white;
   padding: 0.8rem 2rem;
-  border-radius: 25px;
-  font-weight: bold;
+  border-radius: 6px;
+  font-weight: 600;
   transition: transform 0.3s, box-shadow 0.3s;
   width: 100%;
+  border: none;
+  cursor: pointer;
 }
 
 .package-btn:hover {
+  background: #2563eb;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
 }
 
 /* Responsive */

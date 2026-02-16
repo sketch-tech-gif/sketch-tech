@@ -1,61 +1,73 @@
 .service-card {
   background: white;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s, box-shadow 0.3s;
   height: 100%;
+  border-top: 4px solid #3b82f6;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 .service-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .service-card h3 {
-  color: #667eea;
+  color: #1a2332;
   margin-bottom: 1rem;
   font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .service-card p {
   color: #666;
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 .service-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #3b82f6;
   color: white;
   padding: 0.7rem 1.5rem;
-  border-radius: 25px;
-  font-weight: bold;
+  border-radius: 6px;
+  font-weight: 600;
   transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  cursor: pointer;
 }
 
 .service-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
 }
 
 @media (max-width: 768px) {
-  .service-card { padding: 1.2rem; }
-  .service-icon { font-size: 2.2rem; }
-  .service-card h3 { font-size: 1.05rem }
-  .service-card p { font-size: 0.95rem }
-  .service-btn { padding: 0.55rem 1rem }
+  .service-card { 
+    padding: 1.5rem; 
+    border-top: 3px solid #3b82f6;
+  }
+  .service-icon { font-size: 2.5rem; }
+  .service-card h3 { font-size: 1.1rem }
+  .service-card p { font-size: 0.9rem }
+  .service-btn { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
 }
 
 @media (max-width: 480px) {
-  .service-card { padding: 0.9rem }
-  .service-icon { font-size: 1.8rem }
-  .service-card h3 { font-size: 0.95rem }
-  .service-card p { font-size: 0.9rem }
-  .service-btn { padding: 0.45rem 0.9rem }
+  .service-card { 
+    padding: 1.2rem;
+    border-top: 3px solid #3b82f6;
+  }
+  .service-icon { font-size: 2rem }
+  .service-card h3 { font-size: 1rem }
+  .service-card p { font-size: 0.8rem }
+  .service-btn { padding: 0.5rem 1rem; font-size: 0.8rem; }
 }
