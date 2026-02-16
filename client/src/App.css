@@ -1,5 +1,5 @@
 .app {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -10,7 +10,7 @@ html, body, #root {
 
 body {
   margin: 0;
-  overflow: hidden;
+  overflow: auto;
   -webkit-font-smoothing:antialiased;
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   font-size: 15px;
@@ -30,7 +30,7 @@ body {
   grid-template-rows: 1fr 1fr auto;
   gap: 0.5rem;
   align-items: stretch;
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* Hero */

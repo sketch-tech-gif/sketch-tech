@@ -1,9 +1,12 @@
 import './Navbar.css'
+import { useState } from 'react'
 
 export default function Navbar() {
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id)
-    if (element) element.scrollIntoView({ behavior: 'smooth' })
+  const [open, setOpen] = useState(false)
+
+  const handleOpen = (type) => {
+    window.dispatchEvent(new CustomEvent('openModal', { detail: { type } }))
+    setOpen(false)
   }
 
   return (
@@ -16,10 +19,21 @@ export default function Navbar() {
             <p>Your trusted partner for comprehensive digital tech solutions.</p>
           </div>
         </div>
-        <ul className="navbar-menu">
-          <li><button onClick={() => window.dispatchEvent(new CustomEvent('openModal', { detail: { type: 'about' } }))}>About</button></li>
-          <li><button onClick={() => window.dispatchEvent(new CustomEvent('openModal', { detail: { type: 'portfolio' } }))}>Portfolio</button></li>
-          <li><button onClick={() => window.dispatchEvent(new CustomEvent('openModal', { detail: { type: 'reviews' } }))}>Reviews</button></li>
+
+        <button
+          className={`hamburger ${open ? 'is-open' : ''}`}
+          aria-label="Toggle navigation"
+          onClick={() => setOpen(!open)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+
+        <ul className={`navbar-menu ${open ? 'mobile open' : ''}`}>
+          <li><button onClick={() => handleOpen('about')}>About</button></li>
+          <li><button onClick={() => handleOpen('portfolio')}>Portfolio</button></li>
+          <li><button onClick={() => handleOpen('reviews')}>Reviews</button></li>
         </ul>
       </div>
     </nav>

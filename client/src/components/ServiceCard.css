@@ -43,3 +43,19 @@
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
+
+@media (max-width: 768px) {
+  .service-card { padding: 1.2rem; }
+  .service-icon { font-size: 2.2rem; }
+  .service-card h3 { font-size: 1.05rem }
+  .service-card p { font-size: 0.95rem }
+  .service-btn { padding: 0.55rem 1rem }
+}
+
+@media (max-width: 480px) {
+  .service-card { padding: 0.9rem }
+  .service-icon { font-size: 1.8rem }
+  .service-card h3 { font-size: 0.95rem }
+  .service-card p { font-size: 0.9rem }
+  .service-btn { padding: 0.45rem 0.9rem }
+}

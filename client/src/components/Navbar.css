@@ -38,6 +38,54 @@
 
 .navbar-menu li:not(:last-child) a { font-size:0.8rem }
 
+/* Hamburger (hidden on large screens) */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  gap: 4px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+}
+.hamburger.is-open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.hamburger.is-open span:nth-child(2) { opacity: 0; }
+.hamburger.is-open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+/* Mobile menu styles */
+.navbar-menu.mobile {
+  display: none;
+  position: absolute;
+  top: 64px;
+  right: 0.6rem;
+  background: linear-gradient(90deg, #0f1724 0%, #0b7285 100%);
+  border-radius: 8px;
+  padding: 0.6rem;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 300;
+  min-width: 160px;
+}
+.navbar-menu.mobile.open { display: flex; }
+.navbar-menu.mobile button { width: 100%; text-align: left; background: transparent; border: none; padding: 0.5rem 0.6rem; color: white }
+
+
 @media (max-width: 768px) {
   .navbar-container { padding: 0 0.75rem }
   .navbar-logo h1 { font-size:0.95rem }
