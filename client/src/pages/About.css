@@ -6,15 +6,16 @@
 
 /* About Header */
 .about-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1a2332 0%, #2d3748 100%);
   color: white;
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
 .about-header h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
+  font-weight: 800;
 }
 
 .about-header p {
@@ -34,9 +35,10 @@
 }
 
 .story-content h2 {
-  font-size: 2.5rem;
-  color: #333;
+  font-size: 2.2rem;
+  color: #1a2332;
   margin-bottom: 2rem;
+  font-weight: 800;
 }
 
 .story-content p {
@@ -48,37 +50,39 @@
 
 /* Mission Section */
 .about-mission {
-  background: #f8f9fa;
+  background: #f5f7fa;
   padding: 4rem 2rem;
 }
 
 .about-mission h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
-  color: #333;
+  color: #1a2332;
   margin-bottom: 3rem;
+  font-weight: 800;
 }
 
 .mission-grid {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .mission-item {
   background: white;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  border-top: 4px solid #667eea;
+  border-top: 4px solid #3b82f6;
 }
 
 .mission-item h3 {
-  font-size: 1.5rem;
-  color: #667eea;
+  font-size: 1.3rem;
+  color: #3b82f6;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .mission-item p {
@@ -92,10 +96,11 @@
 }
 
 .about-team h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
-  color: #333;
+  color: #1a2332;
   margin-bottom: 1rem;
+  font-weight: 800;
 }
 
 .team-intro {
@@ -106,38 +111,41 @@
 }
 
 .team-grid {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .team-card {
-  background: white;
+  background: #f5f7fa;
   border-radius: 10px;
   padding: 2rem;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s;
+  border-top: 4px solid #3b82f6;
 }
 
 .team-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .team-avatar {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
 }
 
 .team-card h3 {
-  color: #333;
+  color: #1a2332;
   margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 .team-role {
-  color: #667eea;
+  color: #3b82f6;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -150,32 +158,34 @@
 
 /* Services/Differences Section */
 .about-services {
-  background: #f8f9fa;
+  background: #f5f7fa;
   padding: 4rem 2rem;
 }
 
 .about-services h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
-  color: #333;
+  color: #1a2332;
   margin-bottom: 3rem;
+  font-weight: 800;
 }
 
 .differences-grid {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .difference {
   background: white;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s;
+  border-top: 4px solid #3b82f6;
 }
 
 .difference:hover {
@@ -183,13 +193,14 @@
 }
 
 .diff-icon {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
 }
 
 .difference h3 {
-  color: #333;
+  color: #1a2332;
   margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 .difference p {
@@ -200,15 +211,16 @@
 
 /* CTA Section */
 .about-cta {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1a2332 0%, #2d3748 100%);
   color: white;
   padding: 4rem 2rem;
   text-align: center;
 }
 
 .about-cta h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
+  font-weight: 800;
 }
 
 .about-cta p {
@@ -218,20 +230,23 @@
 }
 
 .cta-btn {
-  background: white;
-  color: #667eea;
-  padding: 1rem 2rem;
-  border-radius: 30px;
-  font-weight: bold;
+  background: #3b82f6;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 6px;
+  font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s;
+  border: none;
+  cursor: pointer;
 }
 
 .cta-btn:hover {
+  background: #2563eb;
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
 }
 
 /* Responsive */

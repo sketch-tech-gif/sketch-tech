@@ -6,15 +6,16 @@
 
 /* Contact Header */
 .contact-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1a2332 0%, #2d3748 100%);
   color: white;
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
 .contact-header h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
+  font-weight: 800;
 }
 
 .contact-header p {
@@ -25,7 +26,7 @@
 /* Contact Content */
 .contact-content {
   padding: 4rem 2rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -34,13 +35,16 @@
 
 /* Contact Info */
 .contact-info {
-  background: rgba(255,255,255,0.03);
+  background: #f5f7fa;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 .contact-info h2 {
   font-size: 1.8rem;
-  color: #333;
+  color: #1a2332;
   margin-bottom: 2rem;
+  font-weight: 700;
 }
 
 .info-items {
@@ -111,11 +115,12 @@
 
 /* Contact Form */
 .contact-form-container {
-  background: rgba(255,255,255,0.03);
+  background: white;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(1,4,20,0.45);
-  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem 2rem;
   position: relative;
+  border-top: 4px solid #3b82f6;
 }
 
 .success-message {
@@ -171,8 +176,8 @@
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 .form-group textarea {
@@ -181,19 +186,21 @@
 }
 
 .submit-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #3b82f6;
   color: white;
   padding: 1rem;
-  border-radius: 5px;
-  font-weight: bold;
+  border-radius: 6px;
+  font-weight: 600;
   font-size: 1rem;
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
+  border: none;
 }
 
 .submit-btn:hover:not(:disabled) {
+  background: #2563eb;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
 }
 
 .submit-btn:disabled {
@@ -203,41 +210,45 @@
 
 /* FAQ Section */
 .faq-section {
-  background: rgba(255,255,255,0.02);
+  background: #f5f7fa;
   padding: 4rem 2rem;
 }
 
 .faq-section h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
-  color: #333;
+  color: #1a2332;
   margin-bottom: 3rem;
+  font-weight: 800;
 }
 
 .faq-grid {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .faq-item {
-  background: rgba(255,255,255,0.03);
-  padding: 1.5rem;
+  background: white;
+  padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(1,4,20,0.45);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #3b82f6;
 }
 
 .faq-item h3 {
-  color: #667eea;
+  color: #1a2332;
   margin-bottom: 1rem;
   font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .faq-item p {
   color: #666;
   line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 /* Responsive */
