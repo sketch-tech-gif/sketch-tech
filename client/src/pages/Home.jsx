@@ -43,6 +43,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-content">
           <h1>Smart Digital Solutions for Growing Businesses</h1>
+          <p className="hero-tagline">Custom solutions for every Digital challenge</p>
           <p>Reliable tech services to build, automate, and grow your business.</p>
           <div className="hero-buttons">
             <Link to="/contact" className="btn btn-primary">Get Started Today</Link>
