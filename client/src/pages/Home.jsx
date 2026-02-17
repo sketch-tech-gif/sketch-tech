@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-image">
-          <img src="/hero.jpg" alt="Hero mockup" className="hero-asset" />
+          <img src="/hero.svg" alt="Hero mockup" className="hero-asset" />
         </div>
       </section>
 
