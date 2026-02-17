@@ -29,10 +29,12 @@ export default function Home() {
   ])
 
   const featuredServices = [
-    { icon: '🌐', title: 'Web Development', description: 'Custom websites built with modern technologies' },
-    { icon: '🤖', title: 'Web Scraping', description: 'Extract and analyze data from any website' },
-    { icon: '📄', title: 'CV Writing', description: 'Professional CV optimization for job applications' },
-    { icon: '💼', title: 'Assignment Writing', description: 'Expert academic and professional writing' }
+    { icon: '🌐', title: 'Web Development', description: 'Custom, responsive websites built for performance and growth' },
+    { icon: '⚙️', title: 'Software Solutions', description: 'Tailored applications to streamline your business-processes' },
+    { icon: '🕸️', title: 'Data Scraping', description: 'Accurate data extraction for research, analysis, and automation' },
+    { icon: '🎨', title: 'Design', description: 'Graphics, posters, and branding materials that capture attention' },
+    { icon: '✍️', title: 'CV Writing', description: 'Professionally optimized CVs to help you stand out' },
+    { icon: '✏️', title: 'Content', description: 'High-quality content and copywriting for web and marketing' }
   ]
 
   return (
@@ -52,18 +54,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Services */}
-      <section className="featured-services">
+      {/* Featured Services (matched layout from design) */}
+      <section className="featured-services services-section-large">
         <h2>Our Services</h2>
-        <p className="section-subtitle">We offer a wide range of digital solutions tailored to your needs</p>
-        <div className="services-grid">
+        <p className="section-subtitle">Professional digital services tailored to your needs.</p>
+        <div className="services-grid-2col">
           {featuredServices.map((service, index) => (
-            <ServiceCard
-              key={index}
-              icon={service.icon}
-              title={service.title}
-              description={service.description}
-            />
+            <div key={index} className="service-tile">
+              <div className="service-tile-inner">
+                <div className="service-tile-icon">{service.icon}</div>
+                <div className="service-tile-body">
+                  <h3>{service.title}</h3>
+                  <p>{service.description}</p>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </section>
@@ -114,11 +119,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* See Our Work */}
+      <section className="portfolio-section">
+        <h2>See Our Work</h2>
+        <p className="section-subtitle">Trusted by businesses worldwide for our commitment to quality and results.</p>
+        <div className="portfolio-grid-hero">
+          <img src="/port1.svg" alt="Custom Website" />
+          <img src="/port2.svg" alt="Software Dashboard" />
+          <img src="/port3.svg" alt="Landing Page" />
+        </div>
+        <div className="portfolio-cta">
+          <Link to="/portfolio" className="btn btn-primary">View Portfolio</Link>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="cta-section">
-        <h2>Ready to Transform Your Ideas Into Reality?</h2>
-        <p>Get in touch with our team today and let's create something amazing together</p>
-        <Link to="/contact" className="btn btn-primary">Contact Us Now</Link>
+        <h2>Ready to Grow Your Business?</h2>
+        <p>Contact our team today and let's build something great together.</p>
+        <Link to="/contact" className="btn btn-primary">Get Started</Link>
       </section>
     </div>
   )
