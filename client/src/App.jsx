@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Home from './pages/Home'
 import './App.css'
 
 function App() {
@@ -80,128 +81,7 @@ function App() {
     <div className="app">
       <Navbar />
       <main className="main-content">
-        {/* Services Only */}
-        <section className="services-section">
-          <h2>Services</h2>
-          <div className="grid-2">
-            {services.map((svc, i) => (
-              <div key={i} className="service-mini" style={{ backgroundColor: svc.color, color: svc.textColor }} onClick={() => setSelectedService(svc)} role="button" tabIndex={0} onKeyDown={(e)=>{if(e.key==='Enter')setSelectedService(svc)}}>
-                <div>{svc.icon}</div>
-                <h4>{svc.title}</h4>
-                <p>{svc.description}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Why Choose */}
-        <section className="features-section">
-          <h2>Why Us</h2>
-          <div className="grid-4-mini">
-            {features.map((f, i) => (
-              <div key={i} className="feature-mini" style={{ backgroundColor: f.color, color: f.textColor }} onClick={() => setSelectedFeature(f)} role="button" tabIndex={0} onKeyDown={(e)=>{if(e.key==='Enter')setSelectedFeature(f)}}>
-                <div className="icon-mini">{f.icon}</div>
-                <h4>{f.title}</h4>
-                <p>{f.text}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* CTA Button */}
-        <div className="cta-section">
-          <button className="cta-message-btn" onClick={() => setShowModal(true)}>Leave your message</button>
-        </div>
-
-        {/* Modal */}
-        {showModal && (
-          <div className="modal-overlay" onClick={() => setShowModal(false)}>
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-              <button className="modal-close" onClick={() => setShowModal(false)}>✕</button>
-              <h2>Contact Us</h2>
-              <form className="contact-form-modal" onSubmit={handleSubmit}>
-                {submitted && <div className="success-mini">✓ Sent!</div>}
-                <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required />
-                <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
-                <select name="service" value={formData.service} onChange={handleChange} required>
-                  <option>Service</option>
-                  {services.map((s, i) => <option key={i}>{s.title}</option>)}
-                </select>
-                <textarea name="message" placeholder="Message" rows="5" value={formData.message} onChange={handleChange} required />
-                <button type="submit" className="submit-btn-modal">Send</button>
-              </form>
-            </div>
-          </div>
-        )}
-        
-        {/* Service Detail Modal */}
-        {selectedService && (
-          <div className="modal-overlay" onClick={() => setSelectedService(null)}>
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-              <button className="modal-close" onClick={() => setSelectedService(null)}>✕</button>
-              <h2>{selectedService.title}</h2>
-              <p className="service-detail-text">{selectedService.details}</p>
-            </div>
-          </div>
-        )}
-
-        {/* Feature Detail Modal */}
-        {selectedFeature && (
-          <div className="modal-overlay" onClick={() => setSelectedFeature(null)}>
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-              <button className="modal-close" onClick={() => setSelectedFeature(null)}>✕</button>
-              <h2>{selectedFeature.title}</h2>
-              <p className="service-detail-text">{selectedFeature.details}</p>
-            </div>
-          </div>
-        )}
-
-        {/* About Modal */}
-        {aboutOpen && (
-          <div className="modal-overlay" onClick={() => setAboutOpen(false)}>
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-              <button className="modal-close" onClick={() => setAboutOpen(false)}>✕</button>
-              <h2>About Us</h2>
-              <p className="service-detail-text">Sketch Tech Solutions delivers focused digital services — web development, automation, design and content — with a small expert team. We prioritize outcomes, clear communication and fast turnarounds.</p>
-            </div>
-          </div>
-        )}
-
-        {/* Portfolio Modal */}
-        {portfolioOpen && (
-          <div className="modal-overlay" onClick={() => setPortfolioOpen(false)}>
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-              <button className="modal-close" onClick={() => setPortfolioOpen(false)}>✕</button>
-              <h2>Portfolio</h2>
-              <div className="portfolio-grid">
-                {portfolio.map((p, i) => (
-                  <div key={i} className="portfolio-item">
-                    <strong>{p.title}</strong>
-                    <p>{p.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* Reviews Modal */}
-        {reviewsOpen && (
-          <div className="modal-overlay" onClick={() => setReviewsOpen(false)}>
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-              <button className="modal-close" onClick={() => setReviewsOpen(false)}>✕</button>
-              <h2>Reviews</h2>
-              <div className="reviews-list">
-                {reviews.map((r, i) => (
-                  <div key={i} className="review-item">
-                    <div className="review-header"><strong>{r.name}</strong> <span className="rating">{'★'.repeat(r.rating)}</span></div>
-                    <p>{r.text}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
+        <Home />
       </main>
       <Footer />
       
