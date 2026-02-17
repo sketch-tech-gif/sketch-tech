@@ -8,14 +8,25 @@ html, body, #root {
   height: 100%;
 }
 
+:root {
+  /* Palette derived from supplied design image */
+  --hero-start: #0b1b2b;
+  --hero-end: #2f3446;
+  --accent-gold-1: #f0b457;
+  --accent-gold-2: #d8972f;
+  --muted-bg: #f6f5fb;
+  --card-bg: #ffffff;
+  --text-dark: #1e2530;
+}
+
 body {
   margin: 0;
   overflow: auto;
   -webkit-font-smoothing:antialiased;
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   font-size: 15px;
-  color: #333;
-  background: white;
+  color: var(--text-dark);
+  background: var(--muted-bg);
 }
 
 .main-content {
@@ -49,8 +60,8 @@ body {
   }
 }
 
-/* Hero */
-.hero {
+/* Small inline hero used in grid contexts */
+.mini-hero {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 0.6rem;
@@ -59,8 +70,8 @@ body {
   margin: 0;
 }
 
-.hero h1 { font-size: 1.1rem; margin: 0; }
-.hero p { font-size: 0.75rem; margin: 0; opacity: 0.9; }
+.mini-hero h1 { font-size: 1.1rem; margin: 0; }
+.mini-hero p { font-size: 0.75rem; margin: 0; opacity: 0.9; }
 
 .cta-btn {
   background: white;

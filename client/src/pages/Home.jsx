@@ -40,15 +40,15 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Welcome to Sketch Tech Solutions</h1>
-          <p>Your trusted partner for comprehensive digital tech solutions</p>
+          <h1>Smart Digital Solutions for Growing Businesses</h1>
+          <p>Reliable tech services to build, automate, and grow your business.</p>
           <div className="hero-buttons">
-            <Link to="/services" className="btn btn-primary">Explore Services</Link>
-            <Link to="/contact" className="btn btn-secondary">Get Started</Link>
+            <Link to="/contact" className="btn btn-primary">Get Started Today</Link>
+            <Link to="/portfolio" className="btn btn-secondary">View Portfolio</Link>
           </div>
         </div>
         <div className="hero-image">
-          <div className="hero-graphic">✨💻🚀</div>
+          <img src="/hero.jpg" alt="Hero mockup" className="hero-asset" />
         </div>
       </section>
 
