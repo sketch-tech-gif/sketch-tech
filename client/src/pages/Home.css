@@ -98,10 +98,6 @@
   background: rgba(255,255,255,0.16);
   color: white;
 }
-  justify-content: center;
-  align-items: center;
-}
-
 .hero-graphic {
   font-size: 6rem;
   animation: float 3s ease-in-out infinite;
