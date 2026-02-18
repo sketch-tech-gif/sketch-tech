@@ -9,22 +9,19 @@ export default function Home() {
       id: 1,
       name: 'John Smith',
       company: 'Tech Startup Inc.',
-      text: 'Sketch Tech Solutions delivered an exceptional web application that transformed our business. Highly recommended!',
-      rating: 5
+      text: 'Sketch Tech Solutions delivered an exceptional web application that transformed our business. Highly recommended!'
     },
     {
       id: 2,
       name: 'Sarah Johnson',
       company: 'Digital Marketing Co.',
-      text: 'Their web scraping service provided us with valuable market insights. Professional and efficient.',
-      rating: 5
+      text: 'Their web scraping service provided us with valuable market insights. Professional and efficient.'
     },
     {
       id: 3,
       name: 'Mike Davis',
       company: 'Freelance Designer',
-      text: 'The landing page design was perfect for my portfolio. Great attention to detail!',
-      rating: 5
+      text: 'The landing page design was perfect for my portfolio. Great attention to detail!'
     }
   ])
 
@@ -32,13 +29,37 @@ export default function Home() {
     { icon: '🌐', title: 'Web Development', description: 'Custom, responsive websites built for performance and growth' },
     { icon: '⚙️', title: 'Software Solutions', description: 'Tailored applications to streamline your business-processes' },
     { icon: '🕸️', title: 'Data Scraping', description: 'Accurate data extraction for research, analysis, and automation' },
-    { icon: '🎨', title: 'Design', description: 'Graphics, posters, and branding materials that capture attention' },
-    { icon: '✍️', title: 'CV Writing', description: 'Professionally optimized CVs to help you stand out' },
-    { icon: '✏️', title: 'Content', description: 'High-quality content and copywriting for web and marketing' }
+    { icon: '🎨', title: 'Design & Branding', description: 'Logos, social templates, and visual systems' },
+    { icon: '✍️', title: 'CV & Writing', description: 'CVs, cover letters, and professional documents' },
+    { icon: '🎬', title: 'Content Editing', description: 'TikTok/Reels editing, video cuts and thumbnails' }
+  ]
+
+  const packages = [
+    {
+      id: 'student',
+      title: 'Student Package',
+      price: 'Ksh 350+',
+      color: 'navy',
+      items: ['CV Writing', 'Cover Letters', 'PDF Editing & Formatting', 'Fast Delivery (24–48 hrs)']
+    },
+    {
+      id: 'business',
+      title: 'Business Package',
+      price: 'Ksh 1,500+',
+      color: 'gold',
+      items: ['Logo & Branding', 'Social Media Setup & Templates', 'Marketing Assets']
+    },
+    {
+      id: 'content',
+      title: 'Content & Tech Package',
+      price: 'Ksh 1,000+',
+      color: 'navy',
+      items: ['TikTok & Reels Editing', 'Data Entry & Bulk Conversion', 'Online Account Setup']
+    }
   ]
 
   return (
-    <div className="home-page">
+    <div id="main" tabIndex="-1" className="home-page compact-grid">
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
@@ -71,6 +92,29 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Packages (from provided flyer) */}
+      <section className="packages">
+        <h2>Packages & Pricing</h2>
+        <div className="packages-list">
+          {packages.map(pkg => (
+            <article key={pkg.id} className={`pkg-card pkg-${pkg.color}`}>
+              <div className="pkg-head">
+                <h3>{pkg.title}</h3>
+                <div className="pkg-price">{pkg.price}</div>
+              </div>
+              <ul className="pkg-items">
+                {pkg.items.map((it, i) => <li key={i}>{it}</li>)}
+              </ul>
+            </article>
+          ))}
+        </div>
+        <div className="contact-strip">
+          <a href="https://wa.me/254745909218" className="contact-whatsapp">WhatsApp: +254745909218</a>
+          <a href="https://sketch-tech.vercel.app" className="contact-site">sketch-tech.vercel.app</a>
+          <a href="mailto:sketchtechsolutions@gmail.com" className="contact-email">sketchtechsolutions@gmail.com</a>
         </div>
       </section>
 
@@ -107,9 +151,6 @@ export default function Home() {
         <div className="testimonials-grid">
           {testimonials.map(testimonial => (
             <div key={testimonial.id} className="testimonial-card">
-              <div className="rating">
-                {'⭐'.repeat(testimonial.rating)}
-              </div>
               <p className="testimonial-text">"{testimonial.text}"</p>
               <div className="testimonial-author">
                 <strong>{testimonial.name}</strong>
