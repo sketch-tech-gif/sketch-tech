@@ -25,6 +25,16 @@ body {
   -webkit-font-smoothing:antialiased;
 }
 
+/* Utility container */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+
+/* Buttons (modern agency) */
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:0.6rem; padding:0.6rem 1rem; border-radius:999px; font-weight:700; background:var(--accent-1); color:var(--text-light); border: none; box-shadow: 0 8px 24px rgba(13,24,34,0.45); }
+.btn.secondary { background: transparent; border: 1px solid rgba(255,255,255,0.06); color:var(--text-light); }
+
+/* Section spacing */
+section { padding: 1.2rem 0; }
+
 html {
   scroll-behavior: smooth;
 }
