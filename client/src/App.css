@@ -422,8 +422,7 @@ body {
 }
 
 
-  .container-flex { display: contents }
-}
+  .container-flex { display: contents; }
 
 @media (max-width: 480px) {
   .main-content { 
