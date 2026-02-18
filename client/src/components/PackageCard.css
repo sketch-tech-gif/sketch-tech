@@ -1,0 +1,14 @@
+.pkg-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 12px;
+  padding: 0.8rem;
+  box-shadow: 0 8px 28px rgba(2,8,15,0.35);
+}
+.pkg-head { display:flex; justify-content:space-between; align-items:center; gap:0.75rem; margin-bottom:0.5rem }
+.pkg-head h3{ font-size:1rem; color:var(--text-light); margin:0; font-weight:800 }
+.pkg-price{ background: rgba(255,255,255,0.03); color:var(--accent-2); padding:0.35rem 0.6rem; border-radius:20px; font-weight:800 }
+.pkg-items { list-style:none; padding-left:0; margin:0; display:flex; flex-direction:column; gap:0.25rem }
+.pkg-items li { color:var(--text-muted); font-size:0.95rem }
+.pkg-navy .pkg-head{ background: linear-gradient(90deg,#052437,#0b3b56); padding:0.5rem; border-radius:10px }
+.pkg-gold .pkg-head{ background: linear-gradient(90deg,#b88620,#e0b25a); padding:0.5rem; border-radius:10px }
+.pkg-gold .pkg-price{ color:#082033 }

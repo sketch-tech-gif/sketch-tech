@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import ServiceCard from '../components/ServiceCard'
+import PackageCard from '../components/PackageCard'
+import ServicesList from '../components/ServicesList'
 import './Home.css'
 
 export default function Home() {
@@ -80,19 +82,7 @@ export default function Home() {
       <section className="featured-services services-section-large">
         <h2>Our Services</h2>
         <p className="section-subtitle">Professional digital services tailored to your needs.</p>
-        <div className="services-grid-2col">
-          {featuredServices.map((service, index) => (
-            <div key={index} className="service-tile">
-              <div className="service-tile-inner">
-                <div className="service-tile-icon">{service.icon}</div>
-                <div className="service-tile-body">
-                  <h3>{service.title}</h3>
-                  <p>{service.description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+        <ServicesList services={featuredServices} />
       </section>
 
       {/* Packages (from provided flyer) */}
@@ -100,15 +90,7 @@ export default function Home() {
         <h2>Packages & Pricing</h2>
         <div className="packages-list">
           {packages.map(pkg => (
-            <article key={pkg.id} className={`pkg-card pkg-${pkg.color}`}>
-              <div className="pkg-head">
-                <h3>{pkg.title}</h3>
-                <div className="pkg-price">{pkg.price}</div>
-              </div>
-              <ul className="pkg-items">
-                {pkg.items.map((it, i) => <li key={i}>{it}</li>)}
-              </ul>
-            </article>
+            <PackageCard key={pkg.id} title={pkg.title} price={pkg.price} items={pkg.items} color={pkg.color === 'gold' ? 'gold' : 'navy'} />
           ))}
         </div>
         <div className="contact-strip">
